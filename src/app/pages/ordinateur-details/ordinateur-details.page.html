@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Liste des ordinateurs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list lines="full">
+    <h2>Ajouter</h2>
+    <ion-item>
+      <ion-label>nom ordi</ion-label>
+      <ion-input required type="text" [(ngModel)]="ordinateur.nomOrdinateur"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-button expand="full" (click)="saveOrdinateur()">Enregistrer</ion-button>
+</ion-content>

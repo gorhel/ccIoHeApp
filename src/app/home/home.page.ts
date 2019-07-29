@@ -1,12 +1,43 @@
-import { Component } from '@angular/core';
+import { Ordinateur, OrdinateurService } from './../services/ordinateur.service';
+import { Utilisateur, UtilisateurService } from './../services/utilisateur.service';
+import { Affectation, AffectationService } from './../services/affectation.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  constructor() {}
+  ordinateurs: Ordinateur[];
+  utilisateurs: Utilisateur[];
+  affectations: Affectation[];
 
+  constructor(
+    private ordinateurService: OrdinateurService,
+    private utilisateurService: UtilisateurService,
+    private affectationService: AffectationService
+  ){}
+
+  ngOnInit(){
+
+    this.ordinateurService.getOrdinateurs().subscribe(res => {
+      this.ordinateurs = res;
+    });
+
+    this.utilisateurService.getUtilisateurs().subscribe(res => {
+      this.utilisateurs = res;
+    });
+    this.affectationService.getAffectations().subscribe(res => {
+      this.affectations = res;
+    });
+  }
+
+  remove(item){
+
+    this.ordinateurService.removeOrdinateur(item.id);
+    this.utilisateurService.removeUtilisateur(item.id);
+    this.affectationService.removeAffectation(item.id);
+  }
 }
