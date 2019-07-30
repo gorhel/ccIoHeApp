@@ -7,7 +7,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "ionic:build": "ionic-app-scripts build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -35,6 +34,7 @@
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1",
+    "@ionic/app-scripts": "^3.2.4",
     "typescript": "~3.4.3"
   },
   "devDependencies": {
@@ -47,7 +47,6 @@
     "@angular/compiler-cli": "~8.1.2",
     "@angular/language-service": "~8.1.2",
     "@ionic/angular-toolkit": "~2.0.0",
-    "@ionic/app-scripts": "^3.2.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -63,8 +62,7 @@
     "npm": "^6.10.2",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "tslint": "~5.15.0"
   },
   "description": "An Ionic project"
 }
