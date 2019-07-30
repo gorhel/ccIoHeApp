@@ -75,12 +75,12 @@ this.affectationService.getAffectationsHours();
     if(this.affectationId){
       this.affectationService.updateAffectation(this.affectation, this.affectationId).then(() => {
         loading.dismiss();
-        this.nav.back('home');
+        //this.nav.back('home');
       });
     } else {
       this.affectationService.addAffectation(this.affectation).then(()=> {
         loading.dismiss();
-        this.nav.back('homePa');
+        //this.nav.back('homePage');
       });
     }
   }
