@@ -7,6 +7,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -33,7 +35,8 @@
     "morgan": "^1.9.1",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "typescript": "~3.4.3"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.801.2",
