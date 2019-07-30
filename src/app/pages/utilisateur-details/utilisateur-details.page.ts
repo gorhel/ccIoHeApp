@@ -53,6 +53,7 @@ export class UtilisateurDetailsPage implements OnInit {
     } else {
       this.utilisateurService.addUtilisateur(this.utilisateur).then(()=> {
         loading.dismiss();
+        //this.nav.back('home');
       });
     }
   }
