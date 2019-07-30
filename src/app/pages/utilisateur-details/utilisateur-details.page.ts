@@ -53,14 +53,7 @@ export class UtilisateurDetailsPage implements OnInit {
     } else {
       this.utilisateurService.addUtilisateur(this.utilisateur).then(()=> {
         loading.dismiss();
-<<<<<<< HEAD
         //this.nav.back('home');
-=======
-<<<<<<< HEAD
-        //this.nav.back('home');
-=======
->>>>>>> 09db060ca5e386826400171a44f14c2fb5f2184f
->>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
       });
     }
   }
