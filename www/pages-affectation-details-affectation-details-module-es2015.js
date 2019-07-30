@@ -7,7 +7,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>Affectations du {{ todayDate  | date:'d/MM/yy'}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-list lines=\"full\">\n   <ion-item *ngIf=\"!affectation.utilisateur;\">\n\n      <ion-label>utilisateur</ion-label>\n      <ion-select  value=\"brown\" okText=\"Valider\" cancelText=\"Annuler\" [(ngModel)]=\"affectation.utilisateur\">\n        <ion-select-option *ngFor=\"let item of utilisateur\" value=\"{{ item.nom }} {{ item.prenom }}\">{{ item.nom }} {{ item.prenom }}</ion-select-option>\n      </ion-select>\n\n    </ion-item>\n\n    <ion-item *ngIf=\"affectation.utilisateur;\">\n      <ion-label>utilisateur</ion-label>\n      <ion-input required type=\"text\" disabled [(ngModel)]=\"affectation.utilisateur\"></ion-input>\n    </ion-item>\n\n\n    <ion-item *ngIf=\"!affectation.ordinateur;\">\n    <ion-label>Ordinateur</ion-label>\n    <ion-select value=\"brown\" okText=\"Valider\" cancelText=\"Annuler\" [(ngModel)]=\"affectation.ordinateur\">\n      <ion-select-option *ngFor=\"let item of ordinateur\" value=\"{{ item.nomOrdinateur }}\">{{ item.nomOrdinateur }}</ion-select-option>\n    </ion-select>\n  </ion-item>\n\n  <ion-item *ngIf=\"affectation.ordinateur;\">\n    <ion-label>utilisateur</ion-label>\n    <ion-input required type=\"text\" disabled [(ngModel)]=\"affectation.ordinateur\"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label>cliquez pour voir\n      <ion-button size=\"small\" (click)=\"getAffectationsHours();\">les créneaux disponibles</ion-button>\n    </ion-label>\n  </ion-item>\n\n  <ion-radio-group [(ngModel)]=\"affectation.heureSelected\">\n    <ion-list-header>\n\n    </ion-list-header>\n    <ion-item class=\"heures\"  *ngFor=\"let item of affectationSelect\">\n      <ion-label>{{ item }}h00 - {{ item+1 }}h00  </ion-label>\n      <ion-radio slot=\"start\" value=\"{{ item }}\" checked></ion-radio>\n    </ion-item>\n\n  </ion-radio-group>\n</ion-list>\n\n  <ion-button expand=\"full\" (click)=\"saveAffectation()\">Enregistrer</ion-button>\n</ion-content>\n"
+=======
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>affectationDetails</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>\n"
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 
 /***/ }),
 
@@ -81,6 +85,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AffectationDetailsPage", function() { return AffectationDetailsPage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+<<<<<<< HEAD
 /* harmony import */ var _services_affectation_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../services/affectation.service */ "./src/app/services/affectation.service.ts");
 /* harmony import */ var _services_ordinateur_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../services/ordinateur.service */ "./src/app/services/ordinateur.service.ts");
 /* harmony import */ var _services_utilisateur_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../services/utilisateur.service */ "./src/app/services/utilisateur.service.ts");
@@ -195,16 +200,32 @@ AffectationDetailsPage.ctorParameters = () => [
 ];
 AffectationDetailsPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"])({
+=======
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AffectationDetailsPage = class AffectationDetailsPage {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+AffectationDetailsPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
         selector: 'app-affectation-details',
         template: __webpack_require__(/*! raw-loader!./affectation-details.page.html */ "./node_modules/raw-loader/index.js!./src/app/pages/affectation-details/affectation-details.page.html"),
         styles: [__webpack_require__(/*! ./affectation-details.page.scss */ "./src/app/pages/affectation-details/affectation-details.page.scss")]
     }),
+<<<<<<< HEAD
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["NavController"],
         _services_affectation_service__WEBPACK_IMPORTED_MODULE_1__["AffectationService"],
         _services_ordinateur_service__WEBPACK_IMPORTED_MODULE_2__["OrdinateurService"],
         _services_utilisateur_service__WEBPACK_IMPORTED_MODULE_3__["UtilisateurService"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["LoadingController"]])
+=======
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 ], AffectationDetailsPage);
 
 

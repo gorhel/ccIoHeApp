@@ -374,6 +374,7 @@ var blockedTags = ['script', 'style', 'iframe', 'meta', 'link', 'object', 'embed
 
 
 
+<<<<<<< HEAD
 /***/ }),
 
 /***/ "./src/app/services/affectation.service.ts":
@@ -557,6 +558,8 @@ var UtilisateurService = /** @class */ (function () {
 
 
 
+=======
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 /***/ })
 
 }]);

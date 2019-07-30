@@ -7,7 +7,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>Liste des utilisateurs</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list lines=\"full\">\n    <h2>Ajouter</h2>\n    <ion-item>\n      <ion-label>Nom</ion-label>\n      <ion-input required type=\"text\" [(ngModel)]=\"utilisateur.nom\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Prenom</ion-label>\n      <ion-input required type=\"text\" [(ngModel)]=\"utilisateur.prenom\"></ion-input>\n    </ion-item>\n\n  </ion-list>\n  <ion-button expand=\"full\" (click)=\"saveUtilisateur()\">Enregistrer</ion-button>\n\n\n</ion-content>\n"
+=======
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>utilisateurDetails</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>\n"
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 
 /***/ }),
 
@@ -84,6 +88,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UtilisateurDetailsPage", function() { return UtilisateurDetailsPage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+<<<<<<< HEAD
 /* harmony import */ var _services_utilisateur_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../services/utilisateur.service */ "./src/app/services/utilisateur.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
@@ -172,11 +177,27 @@ var UtilisateurDetailsPage = /** @class */ (function () {
     ]; };
     UtilisateurDetailsPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+=======
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var UtilisateurDetailsPage = /** @class */ (function () {
+    function UtilisateurDetailsPage() {
+    }
+    UtilisateurDetailsPage.prototype.ngOnInit = function () {
+    };
+    UtilisateurDetailsPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
             selector: 'app-utilisateur-details',
             template: __webpack_require__(/*! raw-loader!./utilisateur-details.page.html */ "./node_modules/raw-loader/index.js!./src/app/pages/utilisateur-details/utilisateur-details.page.html"),
             styles: [__webpack_require__(/*! ./utilisateur-details.page.scss */ "./src/app/pages/utilisateur-details/utilisateur-details.page.scss")]
         }),
+<<<<<<< HEAD
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"], _services_utilisateur_service__WEBPACK_IMPORTED_MODULE_1__["UtilisateurService"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["LoadingController"]])
+=======
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
     ], UtilisateurDetailsPage);
     return UtilisateurDetailsPage;
 }());

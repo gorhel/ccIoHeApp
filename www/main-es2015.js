@@ -10,17 +10,26 @@
 var map = {
 	"./pages/affectation-details/affectation-details.module": [
 		"./src/app/pages/affectation-details/affectation-details.module.ts",
+<<<<<<< HEAD
 		"common",
+=======
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 		"pages-affectation-details-affectation-details-module"
 	],
 	"./pages/ordinateur-details/ordinateur-details.module": [
 		"./src/app/pages/ordinateur-details/ordinateur-details.module.ts",
+<<<<<<< HEAD
 		"common",
+=======
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 		"pages-ordinateur-details-ordinateur-details-module"
 	],
 	"./pages/utilisateur-details/utilisateur-details.module": [
 		"./src/app/pages/utilisateur-details/utilisateur-details.module.ts",
+<<<<<<< HEAD
 		"common",
+=======
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 		"pages-utilisateur-details-utilisateur-details-module"
 	]
 };
@@ -34,7 +43,11 @@ function webpackAsyncContext(req) {
 	}
 
 	var ids = map[req], id = ids[0];
+<<<<<<< HEAD
 	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
+=======
+	return __webpack_require__.e(ids[1]).then(function() {
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 		return __webpack_require__(id);
 	});
 }
@@ -494,6 +507,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
+<<<<<<< HEAD
     { path: 'home', loadChildren: () => Promise.all(/*! import() | home-home-module */[__webpack_require__.e("common"), __webpack_require__.e("home-home-module")]).then(__webpack_require__.bind(null, /*! ./home/home.module */ "./src/app/home/home.module.ts")).then(m => m.HomePageModule) },
     { path: 'affectations', loadChildren: './pages/affectation-details/affectation-details.module#AffectationDetailsPageModule' },
     { path: 'affectations/:id', loadChildren: './pages/affectation-details/affectation-details.module#AffectationDetailsPageModule' },
@@ -501,6 +515,12 @@ const routes = [
     { path: 'ordinateurs/:id', loadChildren: './pages/ordinateur-details/ordinateur-details.module#OrdinateurDetailsPageModule' },
     { path: 'utilisateurs', loadChildren: './pages/utilisateur-details/utilisateur-details.module#UtilisateurDetailsPageModule' },
     { path: 'utilisateurs/:id', loadChildren: './pages/utilisateur-details/utilisateur-details.module#UtilisateurDetailsPageModule' }
+=======
+    { path: 'home', loadChildren: () => __webpack_require__.e(/*! import() | home-home-module */ "home-home-module").then(__webpack_require__.bind(null, /*! ./home/home.module */ "./src/app/home/home.module.ts")).then(m => m.HomePageModule) },
+    { path: 'affectation-details', loadChildren: './pages/affectation-details/affectation-details.module#AffectationDetailsPageModule' },
+    { path: 'ordinateur-details', loadChildren: './pages/ordinateur-details/ordinateur-details.module#OrdinateurDetailsPageModule' },
+    { path: 'utilisateur-details', loadChildren: './pages/utilisateur-details/utilisateur-details.module#UtilisateurDetailsPageModule' },
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -601,12 +621,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+<<<<<<< HEAD
 /* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/fire */ "./node_modules/@angular/fire/es2015/index.js");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
 
 
 
+=======
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 
 
 
@@ -622,6 +645,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
         entryComponents: [],
+<<<<<<< HEAD
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(),
@@ -629,6 +653,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_fire__WEBPACK_IMPORTED_MODULE_9__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_10__["environment"].firebase),
             _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_11__["AngularFirestoreModule"]
         ],
+=======
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"]],
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
         providers: [
             _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
@@ -656,6 +683,7 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 const environment = {
+<<<<<<< HEAD
     production: false,
     firebase: {
         apiKey: "AIzaSyAI_LI2nwvP1IzvmT3jZTP0AV_6UqK-yro",
@@ -666,6 +694,9 @@ const environment = {
         messagingSenderId: "216990502082",
         appId: "1:216990502082:web:1d27e0aa5af5cf90"
     }
+=======
+    production: false
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 };
 /*
  * For easier debugging in development mode, you can import the following file
@@ -712,7 +743,11 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/ionic/centreCulturelApp/ccIoHeAppcopie/src/main.ts */"./src/main.ts");
+=======
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/ionic/centreCulturelApp/ccIoHeApp/src/main.ts */"./src/main.ts");
+>>>>>>> c49760ef46177ffb33a83c97a5ae5da53e18a08e
 
 
 /***/ })
