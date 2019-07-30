@@ -48,12 +48,12 @@ export class UtilisateurDetailsPage implements OnInit {
     if(this.utilisateurId){
       this.utilisateurService.updateUtilisateur(this.utilisateur, this.utilisateurId).then(() => {
         loading.dismiss();
-        this.nav.back('home');
+        //this.nav.back('home');
       });
     } else {
       this.utilisateurService.addUtilisateur(this.utilisateur).then(()=> {
         loading.dismiss();
-        this.nav.back('home');
+        //this.nav.back('home');
       });
     }
   }
