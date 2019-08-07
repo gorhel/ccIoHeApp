@@ -6,8 +6,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "ionic:build": "ionic-app-scripts build",
+    "deploy": "ng build --prod && git add dist && git commit -am 'deploy' && git push heroku",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -36,7 +37,8 @@
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "typescript": "~3.4.3",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "@ionic/app-scripts": "^3.2.4"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.801.2",
