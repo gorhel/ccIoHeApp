@@ -1,1 +1,1 @@
-web: ng serve --port $PORT --noopen
+web: npm run build && npm start
